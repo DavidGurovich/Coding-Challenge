@@ -13,26 +13,17 @@
           <p class="font-Lato text-[25px] font-light transform active:scale-75 transition-transform">More Details</p>
         </button>
 
-        <transition name="fade" appear>
-        <div class="modal-overlay" 
-         v-if="isOpen" 
-         @click="isOpen= false"></div>
-        </transition>
-
-
         <transition name="pop" appear>
-  
         <div
-          v-show="isOpen"
+          v-if="isOpen"
           class="
             absolute
             inset-0
             flex
             items-center
             md:left-60
-          "
-        >
-          <div class="z-999 md:w-[580px] md:h-[690px] md:left-[140px] md:top-[159px] p-6 bg-[#FFFFFF] shadow-xl">
+          ">
+          <div class="md:w-[580px] md:h-[690px] md:left-[140px] md:top-[159px] p-6 bg-[#FFFFFF] shadow-xl">
             <div class="flex items-center justify-between">
               <h3 class="md:text-[66px] text-[40px] font-Didot font-[700] leading-[85px] text-[#611818] mt-12 pl-14">Explore</h3>
               <div class="text-[#611818] w-[22px] h-[22px] pb-[140px]" @click="isOpen = false">
@@ -50,7 +41,7 @@
             </div>
             </div>
             <div class="md:mt-4 md:px-4 pr-10">
-              <p class="text-left md:pl-10 md:pt-2 leading-[22px] font-Lato md:text-[18px] md:w-[442px] md:h-[345px] text-[#282828]">
+              <p class="md:text-left md:pl-10 md:pt-2 leading-[22px] font-Lato md:text-[18px] w-[250px] md:w-[442px] md:h-[345px] text-[#282828]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
                 veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -94,30 +85,6 @@
   <style>
     #button {
         background:linear-gradient(90deg, #611818 0%, #A36754 100%);
-    }
-
-    .modal-overlay {
-        content: '';
-        position: absolute;
-        position: fixed;
-        top: 159px;
-        right: 0;
-        bottom: 0;
-        left: 140px;
-        z-index: 998;
-        opacity: 0.6;
-        cursor: pointer;
-}
-
-
-    .fade-enter-active,
-    .fade-leave-active {
-    transition: opacity .4s linear;
-    }
-
-    .fade-enter,
-    .fade-leave-to {
-    opacity: 0;
     }
 
     .pop-enter-active,
