@@ -15,8 +15,8 @@ import Plus from './components/icons/Plus.vue';
         <h1 class="text-[#FFFFFF] text-[224px] leading-[289px]  font-Didot ">Explore</h1>
       </div>
       <div >
-        <button class="flex flex-row items-center gap-x-5">
-          <Plus/>
+        <button class="flex flex-row items-center gap-x-5 " >
+          <Plus class="transform active:scale-75 transition-transform"/>
           <Modal/>
         </button>
       </div>
@@ -44,7 +44,9 @@ import Plus from './components/icons/Plus.vue';
     min-width: screen;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    
   }
- 
+body {
+  overflow: hidden;
+} 
 </style>
