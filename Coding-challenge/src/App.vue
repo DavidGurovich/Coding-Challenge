@@ -7,10 +7,10 @@ import Plus from './components/icons/Plus.vue';
 
 <template>
   <div id='app' class="">
-    <div class="flex flex-col pt-[600px] pl-[290px]">
+    <div class="flex flex-col md:pt-[600px] md:pl-[290px] px-20">
       <transition name="slide" appear>
-        <div class="w-[909px] h-[289px]">
-          <h1  class="text-[#FFFFFF] text-[224px] leading-[289px] font-medium font-Didot ">Explore</h1>
+        <div class="md:w-[909px] md:h-[289px]">
+          <h1  class="text-[#FFFFFF] md:text-[224px] text-[80px] leading-[289px] font-medium font-Didot ">Explore</h1>
       </div>
       </transition>
       <div >
